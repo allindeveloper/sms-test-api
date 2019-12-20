@@ -1,14 +1,12 @@
 const express = require('express');
 
 const bcrypt = require("bcrypt");
-const {validateUserCreate, validateUserLogin} = require('../models/user'); 
+const {validateUserCreate} = require('../models/user'); 
 
 let db = require('../db')
 
 
 const router = express.Router();
-
-// create some helper functions to work on the database
 
 
   // register route
