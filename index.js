@@ -28,6 +28,7 @@ const users = require("./routes/user.route");
 
 app.use(express.json());
 app.use("/api/User", users);
+app.use("/api/Sms", users);
 
 const port = CONFIG.port || 3003;
 app.listen(port, () => console.log(`Listening on port ${port}...`));

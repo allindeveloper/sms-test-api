@@ -5,7 +5,11 @@ const schemas = {
       lastname:Joi.string().required(),
       email:Joi.string().email().required(),
       password:Joi.string().required()
-  })
+  }),
+  smsCreate : Joi.object().keys({
+    message: Joi.string().required(),
+    selectedCategory:Joi.string().required()
+})
   // define all the other schemas below 
 }; 
 module.exports = schemas;
